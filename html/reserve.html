@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	</head>
+<body>
+
+<img src="http://vellasuitehotel.co.kr/wp-content/uploads/kboard_attached/1/201708/598aaded0f8364803060.jpg"/>
+
+<form action="action.php" method="post">
+<label>
+이름 :
+<input name="name" type="text" />
+</label>
+<br />
+<br />
+<label>
+연락처 :
+<input name="phone" type="text" />
+</label>
+<br />
+<br />
+<label>
+예약 날짜 :
+<input name="depart" type="date" />
+</label> 
+<br />
+<br />
+  
+<fieldset>
+<legend>세부사항</legend>
+<p>이용시간 :<br>
+<input name="genre" type="radio" checked="checked" value="오전(09:00)"> 오전(09:00)
+<input name="genre" type="radio" value="오후(12:00)"> 오후(12:00)
+<input name="genre" type="radio" value="저녁(18:00)"> 저녁(18:00)
+</p>
+<p>사전 확인 사항 :
+<br>
+<input name="service[]" type="checkbox" checked="checked" value="비흡연석"> 비흡연석
+<input name="service[]" type="checkbox" value="창가 쪽"> 창가 쪽
+<input name="service[]" type="checkbox" value="주차장 이용"> 주차장 이용
+</p>
+
+<p>선호하는 쉐프 ?
+</p>
+<select name="chef">
+<option value="이용복">이용복 쉐프</option>
+<option value="최현석">최현석 쉐프</option>
+<option value="강레오">강레오 쉐프</option>
+</select>
+</fieldset>
+
+<p>
+긴 글 작성 :
+<textarea name="comments" rows="4" cols="20"> 기타 요구사항 </textarea>
+</p>
+
+<p>
+<input type="submit" value="전송"/>
+</p>
+
+</form>
+</body>
+</html>
